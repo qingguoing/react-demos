@@ -11,5 +11,7 @@
 
 ```npm run start```
 
+最后浏览器地址栏输入http://localhost:8080/demo/即可观察效果
+
 # LICENSE
 MIT
