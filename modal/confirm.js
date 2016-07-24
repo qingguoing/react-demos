@@ -6,7 +6,7 @@ let that = null
 const container = document.createElement('div')
 document.body.appendChild(container)
 
-class Confirm extends Component {
+class ConfirmReact extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -40,7 +40,7 @@ class Confirm extends Component {
     }
 }
 
-ReactDOM.render(<Confirm />, container)
+ReactDOM.render(<ConfirmReact />, container)
 
 function transFn(fn) {
   const regExp = /new\s+Promise/g;
