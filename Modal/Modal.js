@@ -3,7 +3,6 @@ import React, { Component, PropTypes } from 'react'
 const defaultProps = {
     show: false,
     title: '',
-    content: '',
     zIndex: 1000,
     onOk: () => {},
     onCancel: () => {},
@@ -11,11 +10,6 @@ const defaultProps = {
 
 const propTypes = {
     title: PropTypes.string,
-    content: PropTypes.oneOf([
-        PropTypes.element,
-        PropTypes.string,
-        PropTypes.arrayOf(PropTypes.element)
-    ]),
     zIndex: PropTypes.number,
     onOk: PropTypes.func,
     onCancel: PropTypes.func,
@@ -27,12 +21,12 @@ export default class Modal extends Component {
         this.state = {show: props.show}
     }
 
-    componentWillRecieveProps(nextProps) {
+    componentWillReceiveProps(nextProps) {
         this.setState({show: nextProps.show})
     }
 
     render() {
-        const { title, zindex, onOk, onCancel } = this.props
+        const { title, zIndex, onOk, onCancel } = this.props
         document.body.style = this.state.show ? 'overflow: hidden' : ''
         return (
             <div
@@ -40,20 +34,22 @@ export default class Modal extends Component {
                     display: this.state.show ? null : 'none',
                 }}
             >
-                <div className="m-dialog-mask" style={{ zIndex: zindex - 1 }}></div>
-                <div className="m-dialog" style={{ zIndex: zindex }}>
-                    <div className="m-dialog-title">
-                        <h4>{title}</h4>
-                        <span className="btn">
-                            <i className="iconfont" onClick={() => this.setState({ show: false })}>&#xf077;</i>
-                        </span>
-                    </div>
-                    <div className="m-dialog-content">
-                        {this.props.children}
-                    </div>
-                    <div className="m-dialog-foot">
-                        <a href="#" className="m-dialog-btn" onClick={onCancel}>取消</a>
-                        <a href="#" className="m-dialog-btn btns-ok" onClick={onOk}>确定</a>
+                <div className="m-mask" style={{ zIndex: zIndex - 1 }}></div>
+                <div className="m-dialog" style={{ zIndex: zIndex }}>
+                    <div className="md-dialog">
+                        <div className="md-dialog-title">
+                            <h4>{title}</h4>
+                            <span className="btn">
+                                <i className="iconfont" onClick={() => this.setState({ show: false })}>&times;</i>
+                            </span>
+                        </div>
+                        <div className="md-dialog-content">
+                            {this.props.children}
+                        </div>
+                        <div className="md-dialog-foot">
+                            <a href="#" className="btns" onClick={onCancel.bind(this)}>取消</a>
+                            <a href="#" className="btns btns-blue" onClick={onOk.bind(this)}>确定</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,5 +57,5 @@ export default class Modal extends Component {
     }
 }
 
-Modal.defaultProps = defaultProps;
-Modal.propTypes = propTypes;
+Modal.defaultProps = defaultProps
+Modal.propTypes = propTypes
