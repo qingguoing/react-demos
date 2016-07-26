@@ -10,7 +10,7 @@ a {
 
 /* 弹层透明遮罩层样式 */
 .m-mask {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -21,7 +21,7 @@ a {
 
 /*	弹层通用样式	*/
 .m-dialog{
-	position:absolute;
+	position:fixed;
 	left: 50%;
 	top:50%;
 	-webkit-transform: translate(-50%, -50%);
