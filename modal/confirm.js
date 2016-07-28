@@ -64,6 +64,6 @@ export default function Confirm({
     content: content,
     onOk: transFn(onOk),
     onCancel: transFn(onCancel),
-    zIndex: 1000,
+    zIndex,
   });
 }
