@@ -1,10 +1,12 @@
 var path = require('path')
 
 module.exports = {
-    entry: path.resolve(__dirname, 'demo/demo.js'),
     output: {
-        path: path.resolve(__dirname, 'demo'),
-        filename: "bundle.js"
+        filename: "./[name]/bundle.js"
+    },
+    entry: {
+        demo1: "./demo1/demo.js",
+        modal: "./modal/demo.js",
     },
     module: {
         loaders: [
@@ -25,5 +27,5 @@ module.exports = {
     },
     webserver: {
         hot: true
-    }
+    },
 };
