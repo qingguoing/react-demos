@@ -6,7 +6,7 @@ const names = ['Alice', 'Emily', 'Kate'];
 render(
     <div>{
         names.map((name, i) => {
-            return <div key={i}>Hello, {name}!</div>
+            return <div>Hello, {name}!</div>
         })
     }</div>,
     document.getElementById('content')
