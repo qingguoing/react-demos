@@ -57,7 +57,7 @@
 	(0, _reactDom.render)(_react2.default.createElement(
 	    'h1',
 	    null,
-	    ' hello, world'
+	    'hello, qingguoing'
 	), document.getElementById('content'));
 
 /***/ },

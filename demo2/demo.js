@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
-const names = ['Alice', 'Emily', 'Kate'];
+const names = ['Qing', 'Guo', 'ing'];
 
 render(
     <div>{
