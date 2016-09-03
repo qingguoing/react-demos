@@ -13,6 +13,7 @@ module.exports = {
         demo6: "./demo6/demo.js",
         demo7: "./demo7/demo.js",
         demo8: "./demo8/demo.js",
+        demo9: "./demo9/demo.js",
         modal: "./modal/demo.js",
     },
     module: {
