@@ -29,5 +29,9 @@
     "react-dom": "^15.2.1",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
   }
 }
