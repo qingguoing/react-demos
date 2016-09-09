@@ -1,7 +1,7 @@
 {
-  "name": "react-modal",
+  "name": "react-demos",
   "version": "1.0.0",
-  "description": "a test of the dialog modal component with react",
+  "description": "some demos with react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qingguoing/react-modal.git"
+    "url": "git+https://github.com/qingguoing/react-demos.git"
   },
-  "author": "qingguo",
+  "author": "qingguoing",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qingguoing/react-modal/issues"
+    "url": "https://github.com/qingguoing/react-demos/issues"
   },
-  "homepage": "https://github.com/qingguoing/react-modal#readme",
+  "homepage": "https://github.com/qingguoing/react-demos#readme",
   "dependencies": {
     "babel-core": "^6.11.4",
     "babel-loader": "^6.2.4",
