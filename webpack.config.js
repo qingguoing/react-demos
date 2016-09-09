@@ -5,16 +5,7 @@ module.exports = {
         filename: "./[name]/bundle.js"
     },
     entry: {
-        demo1: "./demo1/demo.js",
-        demo2: "./demo2/demo.js",
-        demo3: "./demo3/demo.js",
-        demo4: "./demo4/demo.js",
-        demo5: "./demo5/demo.js",
-        demo6: "./demo6/demo.js",
-        demo7: "./demo7/demo.js",
-        demo8: "./demo8/demo.js",
-        demo9: "./demo9/demo.js",
-        demo10: "./demo10/demo.js",
+        demo1: "./input/demo.js",
         modal: "./modal/demo.js",
     },
     module: {
