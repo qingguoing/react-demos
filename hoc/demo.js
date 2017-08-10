@@ -4,6 +4,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import HOC from './hoc1.js';
+import './style.scss';
 
 class Demo extends Component {
     render() {
