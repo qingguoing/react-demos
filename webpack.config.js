@@ -1,4 +1,4 @@
-var path = require('path')
+var path = require('path');
 
 module.exports = {
     output: {
@@ -7,6 +7,7 @@ module.exports = {
     entry: {
         demo1: "./input/demo.js",
         modal: "./modal/demo.js",
+        hoc: "./hoc/demo.js",
     },
     module: {
         loaders: [
