@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import HOC from './hoc1.js';
 import './style.scss';
 
@@ -16,10 +17,14 @@ class Demo extends Component {
     }
 }
 
+Demo.propTypes = {
+    test: PropTypes.object
+};
+
 const Wrap = HOC(Demo);
 
 ReactDOM.render(
-    <Wrap hoc1="qingguoing">
+    <Wrap hoc1="qingguoing" test="name">
         <h2>title</h2>
         <div>content content content</div>
     </Wrap>,
