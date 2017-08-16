@@ -12,6 +12,7 @@ class Demo extends Component {
         return (
             <div className="test1">
                 {this.props.children}
+                {null} --- {undefined} --- {true} --- {false}
             </div>
         )
     }
